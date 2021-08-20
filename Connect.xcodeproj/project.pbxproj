@@ -11,6 +11,14 @@
 		0406974F26CF7BFE0088CC6B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0406974E26CF7BFE0088CC6B /* SceneDelegate.swift */; };
 		0406975626CF7C020088CC6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0406975526CF7C020088CC6B /* Assets.xcassets */; };
 		0406975926CF7C020088CC6B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0406975726CF7C020088CC6B /* LaunchScreen.storyboard */; };
+		0406976226CFBD190088CC6B /* UserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0406976026CFBD190088CC6B /* UserController.swift */; };
+		0406976326CFBD190088CC6B /* UserController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0406976126CFBD190088CC6B /* UserController.xib */; };
+		0406976726CFBD4E0088CC6B /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0406976526CFBD4E0088CC6B /* UserCell.swift */; };
+		0406976826CFBD4E0088CC6B /* UserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0406976626CFBD4E0088CC6B /* UserCell.xib */; };
+		0406976C26CFD4730088CC6B /* ChatController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0406976A26CFD4730088CC6B /* ChatController.swift */; };
+		0406976D26CFD4730088CC6B /* ChatController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0406976B26CFD4730088CC6B /* ChatController.xib */; };
+		0406977026CFD53E0088CC6B /* ChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0406976E26CFD53E0088CC6B /* ChatCell.swift */; };
+		0406977126CFD53E0088CC6B /* ChatCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0406976F26CFD53E0088CC6B /* ChatCell.xib */; };
 		04EF346526CFABF40031C320 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04EF346426CFABF40031C320 /* GoogleService-Info.plist */; };
 		04EF346826CFAF990031C320 /* PhoneAuthController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EF346626CFAF990031C320 /* PhoneAuthController.swift */; };
 		04EF346926CFAF990031C320 /* PhoneAuthController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04EF346726CFAF990031C320 /* PhoneAuthController.xib */; };
@@ -31,6 +39,14 @@
 		0406975526CF7C020088CC6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0406975826CF7C020088CC6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0406975A26CF7C020088CC6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0406976026CFBD190088CC6B /* UserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserController.swift; sourceTree = "<group>"; };
+		0406976126CFBD190088CC6B /* UserController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserController.xib; sourceTree = "<group>"; };
+		0406976526CFBD4E0088CC6B /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		0406976626CFBD4E0088CC6B /* UserCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserCell.xib; sourceTree = "<group>"; };
+		0406976A26CFD4730088CC6B /* ChatController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatController.swift; sourceTree = "<group>"; };
+		0406976B26CFD4730088CC6B /* ChatController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatController.xib; sourceTree = "<group>"; };
+		0406976E26CFD53E0088CC6B /* ChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCell.swift; sourceTree = "<group>"; };
+		0406976F26CFD53E0088CC6B /* ChatCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatCell.xib; sourceTree = "<group>"; };
 		04EF346426CFABF40031C320 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		04EF346626CFAF990031C320 /* PhoneAuthController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneAuthController.swift; sourceTree = "<group>"; };
 		04EF346726CFAF990031C320 /* PhoneAuthController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhoneAuthController.xib; sourceTree = "<group>"; };
@@ -92,6 +108,29 @@
 			path = Connect;
 			sourceTree = "<group>";
 		};
+		0406976426CFBD1E0088CC6B /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				0406976926CFBD520088CC6B /* View */,
+				0406976026CFBD190088CC6B /* UserController.swift */,
+				0406976126CFBD190088CC6B /* UserController.xib */,
+				0406976A26CFD4730088CC6B /* ChatController.swift */,
+				0406976B26CFD4730088CC6B /* ChatController.xib */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		0406976926CFBD520088CC6B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0406976526CFBD4E0088CC6B /* UserCell.swift */,
+				0406976626CFBD4E0088CC6B /* UserCell.xib */,
+				0406976E26CFD53E0088CC6B /* ChatCell.swift */,
+				0406976F26CFD53E0088CC6B /* ChatCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		04EF347226CFB8B70031C320 /* SignUp */ = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				04EF347226CFB8B70031C320 /* SignUp */,
+				0406976426CFBD1E0088CC6B /* Chat */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -206,12 +246,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0406976D26CFD4730088CC6B /* ChatController.xib in Resources */,
 				04EF346926CFAF990031C320 /* PhoneAuthController.xib in Resources */,
 				04EF347126CFB4800031C320 /* PersonalInfoController.xib in Resources */,
 				04EF346526CFABF40031C320 /* GoogleService-Info.plist in Resources */,
 				0406975926CF7C020088CC6B /* LaunchScreen.storyboard in Resources */,
 				04EF346D26CFB3FD0031C320 /* AuthCodeController.xib in Resources */,
+				0406976826CFBD4E0088CC6B /* UserCell.xib in Resources */,
+				0406977126CFD53E0088CC6B /* ChatCell.xib in Resources */,
 				0406975626CF7C020088CC6B /* Assets.xcassets in Resources */,
+				0406976326CFBD190088CC6B /* UserController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,8 +309,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				04EF346C26CFB3FD0031C320 /* AuthCodeController.swift in Sources */,
+				0406976226CFBD190088CC6B /* UserController.swift in Sources */,
+				0406977026CFD53E0088CC6B /* ChatCell.swift in Sources */,
 				04EF346826CFAF990031C320 /* PhoneAuthController.swift in Sources */,
+<<<<<<< HEAD
 				04EF347926CFD3960031C320 /* CircleImageView.swift in Sources */,
+=======
+				0406976C26CFD4730088CC6B /* ChatController.swift in Sources */,
+				0406976726CFBD4E0088CC6B /* UserCell.swift in Sources */,
+>>>>>>> 21ab2548ab4bcbdaf90c7f1b5258de00a48ed79e
 				0406974D26CF7BFD0088CC6B /* AppDelegate.swift in Sources */,
 				04EF347626CFCCEE0031C320 /* ImagePicker.swift in Sources */,
 				0406974F26CF7BFE0088CC6B /* SceneDelegate.swift in Sources */,

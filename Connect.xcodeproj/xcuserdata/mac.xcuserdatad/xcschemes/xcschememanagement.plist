@@ -7,7 +7,11 @@
 		<key>Connect.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
+<<<<<<< HEAD
 			<integer>22</integer>
+=======
+			<integer>11</integer>
+>>>>>>> 21ab2548ab4bcbdaf90c7f1b5258de00a48ed79e
 		</dict>
 	</dict>
 </dict>
