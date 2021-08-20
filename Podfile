@@ -8,5 +8,7 @@ target 'Connect' do
   # Pods for Connect
 	pod 'Firebase/Analytics'
   pod 'Firebase/Auth'
-
+  pod 'Firebase/Database'
+  pod 'Firebase/Core'
+  pod 'Firebase/Storage'
 end

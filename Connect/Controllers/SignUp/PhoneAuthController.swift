@@ -27,11 +27,9 @@ class PhoneAuthController: UIViewController {
     }
     
     func phoneAuth(phoneNumber: String) {
-        PhoneAuthProvider.provider()
-          .verifyPhoneNumber(phoneNumber, uiDelegate: nil) { verificationID, error in
+        PhoneAuthProvider.provider().verifyPhoneNumber(phoneNumber, uiDelegate: nil) { verificationID, error in
               if let error = error {
                 print(error.localizedDescription)
-                
               }else {
                 if let verificationID = verificationID {
                     let vc = AuthCodeController()

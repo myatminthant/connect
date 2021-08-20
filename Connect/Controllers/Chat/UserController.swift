@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseDatabase
 
 class UserController: UITableViewController {
         
@@ -13,8 +14,12 @@ class UserController: UITableViewController {
         super.viewDidLoad()
          
         title = "Available Users"
+        
+        navigationController?.navigationBar.backgroundColor = .red
+        navigationController?.navigationBar.prefersLargeTitles = true
         tableView.separatorStyle = .none
         tableView.register(UINib(nibName: "UserCell", bundle: nil), forCellReuseIdentifier: "UserCell")
+        fetchUserData()
     }
 
     // MARK: - Table view data source
@@ -30,5 +35,16 @@ class UserController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 //        tableView.deselectRow(at: indexPath, animated: true)
         navigationController?.pushViewController(ChatController(), animated: true)
+    }
+}
+
+extension UserController {
+    func fetchUserData() {
+        let databaseRef = Database.database().reference()
+        databaseRef.child("users").observe(.value) { snapshot in
+            let currentUserID = UserDefaults.standard.string(forKey: "UserID")
+            let snapshotValues = snapshot.children.allObjects
+            print(snapshotValues) 
+        }
     }
 }
