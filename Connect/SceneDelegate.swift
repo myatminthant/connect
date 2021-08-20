@@ -20,7 +20,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         FirebaseApp.configure()
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)
-            window.rootViewController = PhoneAuthController()
+            let userID = UserDefaults.standard.string(forKey: "UserID")
+            if userID != nil, userID != "" {
+//                window.rootViewController =
+            } else {
+                window.rootViewController = PhoneAuthController()
+            }
             self.window = window
             window.makeKeyAndVisible()
         }

@@ -18,6 +18,9 @@
 		04EF346D26CFB3FD0031C320 /* AuthCodeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04EF346B26CFB3FD0031C320 /* AuthCodeController.xib */; };
 		04EF347026CFB4800031C320 /* PersonalInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EF346E26CFB4800031C320 /* PersonalInfoController.swift */; };
 		04EF347126CFB4800031C320 /* PersonalInfoController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04EF346F26CFB4800031C320 /* PersonalInfoController.xib */; };
+		04EF347626CFCCEE0031C320 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EF347526CFCCEE0031C320 /* ImagePicker.swift */; };
+		04EF347926CFD3960031C320 /* CircleImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EF347826CFD3960031C320 /* CircleImageView.swift */; };
+		04EF347B26CFD3B90031C320 /* FancyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EF347A26CFD3B90031C320 /* FancyView.swift */; };
 		0B6DCADC1D26F7D85F7A4D58 /* Pods_Connect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA6663C10F9397782A09AFCD /* Pods_Connect.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +38,9 @@
 		04EF346B26CFB3FD0031C320 /* AuthCodeController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AuthCodeController.xib; sourceTree = "<group>"; };
 		04EF346E26CFB4800031C320 /* PersonalInfoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalInfoController.swift; sourceTree = "<group>"; };
 		04EF346F26CFB4800031C320 /* PersonalInfoController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonalInfoController.xib; sourceTree = "<group>"; };
+		04EF347526CFCCEE0031C320 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		04EF347826CFD3960031C320 /* CircleImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImageView.swift; sourceTree = "<group>"; };
+		04EF347A26CFD3B90031C320 /* FancyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyView.swift; sourceTree = "<group>"; };
 		501F4A130855AABD0A8A4F61 /* Pods-Connect.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Connect.release.xcconfig"; path = "Target Support Files/Pods-Connect/Pods-Connect.release.xcconfig"; sourceTree = "<group>"; };
 		D1462E7F69B0E944ABC79925 /* Pods-Connect.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Connect.debug.xcconfig"; path = "Target Support Files/Pods-Connect/Pods-Connect.debug.xcconfig"; sourceTree = "<group>"; };
 		FA6663C10F9397782A09AFCD /* Pods_Connect.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Connect.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -73,6 +79,8 @@
 		0406974B26CF7BFD0088CC6B /* Connect */ = {
 			isa = PBXGroup;
 			children = (
+				04EF347726CFD37C0031C320 /* View */,
+				04EF347426CFCCC60031C320 /* Ulti */,
 				0406974C26CF7BFD0088CC6B /* AppDelegate.swift */,
 				0406974E26CF7BFE0088CC6B /* SceneDelegate.swift */,
 				04EF347326CFB8C30031C320 /* Controllers */,
@@ -103,6 +111,23 @@
 				04EF347226CFB8B70031C320 /* SignUp */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		04EF347426CFCCC60031C320 /* Ulti */ = {
+			isa = PBXGroup;
+			children = (
+				04EF347526CFCCEE0031C320 /* ImagePicker.swift */,
+			);
+			path = Ulti;
+			sourceTree = "<group>";
+		};
+		04EF347726CFD37C0031C320 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				04EF347826CFD3960031C320 /* CircleImageView.swift */,
+				04EF347A26CFD3B90031C320 /* FancyView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		26F43F47B32695A5505D4CA7 /* Pods */ = {
@@ -241,8 +266,11 @@
 			files = (
 				04EF346C26CFB3FD0031C320 /* AuthCodeController.swift in Sources */,
 				04EF346826CFAF990031C320 /* PhoneAuthController.swift in Sources */,
+				04EF347926CFD3960031C320 /* CircleImageView.swift in Sources */,
 				0406974D26CF7BFD0088CC6B /* AppDelegate.swift in Sources */,
+				04EF347626CFCCEE0031C320 /* ImagePicker.swift in Sources */,
 				0406974F26CF7BFE0088CC6B /* SceneDelegate.swift in Sources */,
+				04EF347B26CFD3B90031C320 /* FancyView.swift in Sources */,
 				04EF347026CFB4800031C320 /* PersonalInfoController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

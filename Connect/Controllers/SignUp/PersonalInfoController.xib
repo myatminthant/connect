@@ -10,6 +10,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PersonalInfoController" customModule="Connect" customModuleProvider="target">
             <connections>
+                <outlet property="bgview" destination="nI3-DA-LyZ" id="HLB-fY-S54"/>
+                <outlet property="emailField" destination="ZxY-8L-HaQ" id="wvm-pt-upn"/>
+                <outlet property="userImg" destination="AzL-QN-yti" id="YcA-Vq-JNR"/>
+                <outlet property="usernameField" destination="QGD-uq-Byu" id="IkM-Oy-KTV"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -68,17 +72,22 @@
                             <state key="normal" title="Sign Up">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </state>
+                            <connections>
+                                <action selector="signUpTap:" destination="-1" eventType="touchUpInside" id="Xcf-Uc-gRM"/>
+                            </connections>
                         </button>
                     </subviews>
                 </stackView>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nI3-DA-LyZ">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nI3-DA-LyZ" customClass="FancyView" customModule="Connect" customModuleProvider="target">
                     <rect key="frame" x="132" y="122.5" width="150" height="150"/>
                     <subviews>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="AzL-QN-yti">
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="AzL-QN-yti" customClass="CircleImageView" customModule="Connect" customModuleProvider="target">
                             <rect key="frame" x="3" y="3" width="144" height="144"/>
+                            <gestureRecognizers/>
                         </imageView>
                     </subviews>
                     <color key="backgroundColor" red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="0.1318510952374792" colorSpace="custom" customColorSpace="sRGB"/>
+                    <gestureRecognizers/>
                     <constraints>
                         <constraint firstAttribute="trailing" secondItem="AzL-QN-yti" secondAttribute="trailing" constant="3" id="BdA-eg-h0j"/>
                         <constraint firstItem="AzL-QN-yti" firstAttribute="leading" secondItem="nI3-DA-LyZ" secondAttribute="leading" constant="3" id="Eat-X3-EdH"/>
@@ -87,6 +96,9 @@
                         <constraint firstAttribute="width" constant="150" id="NEE-MC-smK"/>
                         <constraint firstItem="AzL-QN-yti" firstAttribute="top" secondItem="nI3-DA-LyZ" secondAttribute="top" constant="3" id="Yef-Lh-SBh"/>
                     </constraints>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="PFP-At-ntG" appends="YES" id="9Yu-UA-SLm"/>
+                    </connections>
                 </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
@@ -101,6 +113,11 @@
             </constraints>
             <point key="canvasLocation" x="132" y="129"/>
         </view>
+        <tapGestureRecognizer id="PFP-At-ntG">
+            <connections>
+                <action selector="pickImage:" destination="-1" id="gYy-uv-F12"/>
+            </connections>
+        </tapGestureRecognizer>
     </objects>
     <resources>
         <image name="user_placeholder" width="612" height="612"/>
