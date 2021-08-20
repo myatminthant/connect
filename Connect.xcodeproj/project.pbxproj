@@ -19,6 +19,7 @@
 		0406976D26CFD4730088CC6B /* ChatController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0406976B26CFD4730088CC6B /* ChatController.xib */; };
 		0406977026CFD53E0088CC6B /* ChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0406976E26CFD53E0088CC6B /* ChatCell.swift */; };
 		0406977126CFD53E0088CC6B /* ChatCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0406976F26CFD53E0088CC6B /* ChatCell.xib */; };
+		04A7FC7426CFFC7A00BB0249 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A7FC7326CFFC7A00BB0249 /* ImagePicker.swift */; };
 		04EF346526CFABF40031C320 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04EF346426CFABF40031C320 /* GoogleService-Info.plist */; };
 		04EF346826CFAF990031C320 /* PhoneAuthController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EF346626CFAF990031C320 /* PhoneAuthController.swift */; };
 		04EF346926CFAF990031C320 /* PhoneAuthController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04EF346726CFAF990031C320 /* PhoneAuthController.xib */; };
@@ -44,6 +45,7 @@
 		0406976B26CFD4730088CC6B /* ChatController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatController.xib; sourceTree = "<group>"; };
 		0406976E26CFD53E0088CC6B /* ChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCell.swift; sourceTree = "<group>"; };
 		0406976F26CFD53E0088CC6B /* ChatCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatCell.xib; sourceTree = "<group>"; };
+		04A7FC7326CFFC7A00BB0249 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		04EF346426CFABF40031C320 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		04EF346626CFAF990031C320 /* PhoneAuthController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneAuthController.swift; sourceTree = "<group>"; };
 		04EF346726CFAF990031C320 /* PhoneAuthController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhoneAuthController.xib; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 			children = (
 				0406974C26CF7BFD0088CC6B /* AppDelegate.swift */,
 				0406974E26CF7BFE0088CC6B /* SceneDelegate.swift */,
+				04A7FC7526CFFC7F00BB0249 /* Utilities */,
 				04EF347326CFB8C30031C320 /* Controllers */,
 				0406975526CF7C020088CC6B /* Assets.xcassets */,
 				0406975726CF7C020088CC6B /* LaunchScreen.storyboard */,
@@ -121,6 +124,14 @@
 				0406976F26CFD53E0088CC6B /* ChatCell.xib */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		04A7FC7526CFFC7F00BB0249 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				04A7FC7326CFFC7A00BB0249 /* ImagePicker.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		04EF347226CFB8B70031C320 /* SignUp */ = {
@@ -290,6 +301,7 @@
 				0406976C26CFD4730088CC6B /* ChatController.swift in Sources */,
 				0406976726CFBD4E0088CC6B /* UserCell.swift in Sources */,
 				0406974D26CF7BFD0088CC6B /* AppDelegate.swift in Sources */,
+				04A7FC7426CFFC7A00BB0249 /* ImagePicker.swift in Sources */,
 				0406974F26CF7BFE0088CC6B /* SceneDelegate.swift in Sources */,
 				04EF347026CFB4800031C320 /* PersonalInfoController.swift in Sources */,
 			);

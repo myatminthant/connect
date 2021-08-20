@@ -6,24 +6,40 @@
 //
 
 import UIKit
+import Firebase 
 
 class PersonalInfoController: UIViewController {
 
+    @IBOutlet weak var bgview: UIView!
+    @IBOutlet weak var userImg: UIImageView!
+    @IBOutlet weak var usernameField: UITextField!
+    @IBOutlet weak var emailField: UITextField!
+    
+    var imagePicker: ImagePicker!
+    let keyUid = "uid"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.imagePicker = ImagePicker(presentationController: self, delegate: self)
+    }
+    
+    @IBAction func pickImage(_ sender: UITapGestureRecognizer) {
+        self.imagePicker.present()
+    }
+    
+    @IBAction func signUpTap(_ sender: UIButton) {
+        guard let userName = usernameField.text,
+              let email = emailField.text,
+              userName != "",
+              email != "" else { return }
+        
+        
     }
 
+}
+extension PersonalInfoController: ImagePickerDelegate {
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func didSelect(image: UIImage?) {
+        self.userImg.image = image
     }
-    */
-
 }

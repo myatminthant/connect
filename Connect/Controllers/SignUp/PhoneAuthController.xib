@@ -10,7 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PhoneAuthController" customModule="Connect" customModuleProvider="target">
             <connections>
-                <outlet property="phoneNumberText" destination="yeB-fC-t38" id="TtP-zh-JnH"/>
+                <outlet property="phoneNumberField" destination="yeB-fC-t38" id="Y1i-dO-6Yv"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AuthCodeController" customModule="Connect" customModuleProvider="target">
             <connections>
+                <outlet property="codeField" destination="Fhg-3f-lPj" id="PTL-bp-Rgh"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -44,6 +45,9 @@
                                     <state key="normal" title="Continue to Sign Up">
                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </state>
+                                    <connections>
+                                        <action selector="continueToSignUpTap:" destination="-1" eventType="touchUpInside" id="d3o-jy-be6"/>
+                                    </connections>
                                 </button>
                             </subviews>
                         </stackView>
